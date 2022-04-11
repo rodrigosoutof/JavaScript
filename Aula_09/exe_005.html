@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+
+            background-color: rgb(219, 219, 223);
+            color: black;
+            font: normal 11pt Arial;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1> Iniciando estudos com Dom. </h1>
+    <p> Aqui vai o resultado </p>
+    <p> Aprendendo a usar o <strong> DOM</strong> em Javascript. </p>
+    <div id='msg'> Clique em mim </div>
+    
+    <script> 
+
+    var p1 = window.document.getElementsByTagName('p')[1]
+   // var corpo = window.document.body //atrelando o elemento body do meu documento que esta sendo exibido na minha janela(navegador)
+    
+    // window.document.write('Esta escrito assim: ' + p1.innerText)// innerText é o que esta escrito no paragrafo escolhido
+    //p1.style.color = 'blue' // muda cor do paragrafo escolhido
+    //corpo.style.background = 'red' // muda cor de fundo, não necessario por color
+    //document.write(p1.innerHTML) //innerHTML para mostrar com a formatação
+    
+   /* var d = window.document.getElementById('msg')
+    d.style.background = 'purple'
+    d.style.color = "white"
+    d.innerText = "Estou aguardando" */
+
+    var d = window.document.querySelector('div#msg') //quando se usar id colocar # quando for uma classe usar . (ponto)
+    d.style.background = 'blue'
+    d.style.color = 'white'
+        
+    </script>
+
+</body>
+</html>
